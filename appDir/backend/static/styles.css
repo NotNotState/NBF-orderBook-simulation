@@ -1,0 +1,66 @@
+h1 {
+    text-align: center;
+}
+
+/*
+#activetradescontainer {
+    width: 90%;
+    margin: 0 auto;
+}
+*/
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.tab {
+    margin: 0 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+.dataTables-wrapper{
+    margin: auto;
+}
+
+button {
+    padding: 0.25rem 1rem !important;
+    background-color: black !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 0.5rem !important;
+    font-weight: 700 !important;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+th,td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center !important;
+}
+
+.lightRed {
+    /* background-color: #ff8080 !important; */
+    background-color: #f00 !important;
+    color: #fff;
+    font-weight: bold;
+}
+
+.lightGreen {
+    background-color: #80ff9e !important
+}
+
+.lightGreen a {
+    color: #038809;
+    font-weight: bold;
+}

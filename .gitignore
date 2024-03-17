@@ -1,0 +1,20 @@
+# Ignore Testing Notebooks
+*.ipynb
+
+# Ignore testing files
+app_old.py
+
+#Ignore pdfs
+*.pdf
+
+#Ignore zip files
+*.zip
+
+#ignore all node files except dependencies
+node_modules
+
+# Allow for dependencies
+!node_modules/.package-lock.json
+
+#Ignore unused directory
+National Bank Of Canada Data For ConUHacks VIII

@@ -1,0 +1,1405 @@
+[
+    {
+        "TimeStamp": "2024-01-05 09:30:00.369765016",
+        "TimeStampEpoch": "1704447000369765016",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830f4-95a6-11ed-96de-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 16.14,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.369815365",
+        "TimeStampEpoch": "1704447000369815365",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830f4-95a6-11ed-96de-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 16.14,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.369839902",
+        "TimeStampEpoch": "1704447000369839902",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830f5-95a6-11ed-b27c-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 24.24,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.369887793",
+        "TimeStampEpoch": "1704447000369887793",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830f5-95a6-11ed-b27c-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 24.24,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.372541345",
+        "TimeStampEpoch": "1704447000372541345",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830f4-95a6-11ed-96de-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.372573203",
+        "TimeStampEpoch": "1704447000372573203",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830f6-95a6-11ed-9edf-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 16.12,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.372589155",
+        "TimeStampEpoch": "1704447000372589155",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830f4-95a6-11ed-96de-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.372593117",
+        "TimeStampEpoch": "1704447000372593117",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830f4-95a6-11ed-96de-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.372620669",
+        "TimeStampEpoch": "1704447000372620669",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830f6-95a6-11ed-9edf-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 16.12,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.427252559",
+        "TimeStampEpoch": "1704447000427252559",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830f7-95a6-11ed-9f45-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 17.48,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.427301406",
+        "TimeStampEpoch": "1704447000427301406",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830f7-95a6-11ed-9f45-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 17.48,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.427393473",
+        "TimeStampEpoch": "1704447000427393473",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830f8-95a6-11ed-af02-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 22.87,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.427442833",
+        "TimeStampEpoch": "1704447000427442833",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830f8-95a6-11ed-af02-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 22.87,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.427643132",
+        "TimeStampEpoch": "1704447000427643132",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830f6-95a6-11ed-9edf-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.427688561",
+        "TimeStampEpoch": "1704447000427688561",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830f6-95a6-11ed-9edf-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.427692860",
+        "TimeStampEpoch": "1704447000427692860",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830f6-95a6-11ed-9edf-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.427734909",
+        "TimeStampEpoch": "1704447000427734909",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830f5-95a6-11ed-b27c-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.427784211",
+        "TimeStampEpoch": "1704447000427784211",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830f5-95a6-11ed-b27c-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.427788163",
+        "TimeStampEpoch": "1704447000427788163",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830f5-95a6-11ed-b27c-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.491189071",
+        "TimeStampEpoch": "1704447000491189071",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830f9-95a6-11ed-850c-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 17.62,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.491206861",
+        "TimeStampEpoch": "1704447000491206861",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830fa-95a6-11ed-9b80-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 22.74,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.491239023",
+        "TimeStampEpoch": "1704447000491239023",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830f9-95a6-11ed-850c-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 17.62,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.491252387",
+        "TimeStampEpoch": "1704447000491252387",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830fa-95a6-11ed-9b80-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 22.74,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.705396846",
+        "TimeStampEpoch": "1704447000705396846",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830f7-95a6-11ed-9f45-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.705446152",
+        "TimeStampEpoch": "1704447000705446152",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830f7-95a6-11ed-9f45-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.705448760",
+        "TimeStampEpoch": "1704447000705448760",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830f7-95a6-11ed-9f45-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.705459769",
+        "TimeStampEpoch": "1704447000705459769",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830f8-95a6-11ed-af02-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.705508280",
+        "TimeStampEpoch": "1704447000705508280",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830f8-95a6-11ed-af02-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.705512322",
+        "TimeStampEpoch": "1704447000705512322",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830f8-95a6-11ed-af02-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.705704239",
+        "TimeStampEpoch": "1704447000705704239",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830f9-95a6-11ed-850c-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.705753277",
+        "TimeStampEpoch": "1704447000705753277",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830f9-95a6-11ed-850c-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.705756292",
+        "TimeStampEpoch": "1704447000705756292",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830f9-95a6-11ed-850c-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.705813016",
+        "TimeStampEpoch": "1704447000705813016",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830fa-95a6-11ed-9b80-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.705857975",
+        "TimeStampEpoch": "1704447000705857975",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830fa-95a6-11ed-9b80-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:00.705864478",
+        "TimeStampEpoch": "1704447000705864478",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830fa-95a6-11ed-9b80-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:01.582227580",
+        "TimeStampEpoch": "1704447001582227580",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830fb-95a6-11ed-87cf-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.77,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:01.582381579",
+        "TimeStampEpoch": "1704447001582381579",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830fc-95a6-11ed-b6c1-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.58,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:02.212744956",
+        "TimeStampEpoch": "1704447002212744956",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830fb-95a6-11ed-87cf-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.77,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:02.212758059",
+        "TimeStampEpoch": "1704447002212758059",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830fc-95a6-11ed-b6c1-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.58,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:02.322783361",
+        "TimeStampEpoch": "1704447002322783361",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830fc-95a6-11ed-b6c1-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:02.322796752",
+        "TimeStampEpoch": "1704447002322796752",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830fd-95a6-11ed-9392-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.6,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:02.483381106",
+        "TimeStampEpoch": "1704447002483381106",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830fe-95a6-11ed-9d52-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.58,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:02.601300456",
+        "TimeStampEpoch": "1704447002601300456",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830fb-95a6-11ed-87cf-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:03.232223873",
+        "TimeStampEpoch": "1704447003232223873",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830fc-95a6-11ed-b6c1-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:03.232228780",
+        "TimeStampEpoch": "1704447003232228780",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830fc-95a6-11ed-b6c1-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:03.232257291",
+        "TimeStampEpoch": "1704447003232257291",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830fd-95a6-11ed-9392-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.6,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:03.232269119",
+        "TimeStampEpoch": "1704447003232269119",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830fe-95a6-11ed-9d52-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.58,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:03.232284056",
+        "TimeStampEpoch": "1704447003232284056",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830fb-95a6-11ed-87cf-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:03.232288473",
+        "TimeStampEpoch": "1704447003232288473",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830fb-95a6-11ed-87cf-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:03.232996502",
+        "TimeStampEpoch": "1704447003232996502",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830fd-95a6-11ed-9392-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:03.233088131",
+        "TimeStampEpoch": "1704447003233088131",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830fe-95a6-11ed-9d52-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:03.240097710",
+        "TimeStampEpoch": "1704447003240097710",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830fd-95a6-11ed-9392-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:03.240104786",
+        "TimeStampEpoch": "1704447003240104786",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830fd-95a6-11ed-9392-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:03.240117149",
+        "TimeStampEpoch": "1704447003240117149",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830fe-95a6-11ed-9d52-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:03.240123241",
+        "TimeStampEpoch": "1704447003240123241",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830fe-95a6-11ed-9d52-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:03.571331950",
+        "TimeStampEpoch": "1704447003571331950",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830ff-95a6-11ed-ba47-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.77,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:03.571454977",
+        "TimeStampEpoch": "1704447003571454977",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83100-95a6-11ed-9797-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.58,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:03.710358138",
+        "TimeStampEpoch": "1704447003710358138",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83101-95a6-11ed-bdb8-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.59,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:03.983138591",
+        "TimeStampEpoch": "1704447003983138591",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83102-95a6-11ed-9584-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.6,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:04.213219477",
+        "TimeStampEpoch": "1704447004213219477",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830ff-95a6-11ed-ba47-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.77,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:04.213237685",
+        "TimeStampEpoch": "1704447004213237685",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83100-95a6-11ed-9797-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.58,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:04.213249768",
+        "TimeStampEpoch": "1704447004213249768",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83101-95a6-11ed-bdb8-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.59,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:04.213263637",
+        "TimeStampEpoch": "1704447004213263637",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83102-95a6-11ed-9584-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.6,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:04.215443105",
+        "TimeStampEpoch": "1704447004215443105",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83100-95a6-11ed-9797-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:04.215467227",
+        "TimeStampEpoch": "1704447004215467227",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83101-95a6-11ed-bdb8-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:04.220509223",
+        "TimeStampEpoch": "1704447004220509223",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83100-95a6-11ed-9797-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:04.220518088",
+        "TimeStampEpoch": "1704447004220518088",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83100-95a6-11ed-9797-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:04.220522576",
+        "TimeStampEpoch": "1704447004220522576",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83101-95a6-11ed-bdb8-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:04.220526120",
+        "TimeStampEpoch": "1704447004220526120",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83101-95a6-11ed-bdb8-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.550178838",
+        "TimeStampEpoch": "1704447005550178838",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef830ff-95a6-11ed-ba47-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.550199692",
+        "TimeStampEpoch": "1704447005550199692",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83103-95a6-11ed-9e96-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.76,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.550229103",
+        "TimeStampEpoch": "1704447005550229103",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830ff-95a6-11ed-ba47-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.550233311",
+        "TimeStampEpoch": "1704447005550233311",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef830ff-95a6-11ed-ba47-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.550246341",
+        "TimeStampEpoch": "1704447005550246341",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83103-95a6-11ed-9e96-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.76,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.550455830",
+        "TimeStampEpoch": "1704447005550455830",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83102-95a6-11ed-9584-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.550473317",
+        "TimeStampEpoch": "1704447005550473317",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83104-95a6-11ed-bf74-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.74,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.550502651",
+        "TimeStampEpoch": "1704447005550502651",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83102-95a6-11ed-9584-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.550504860",
+        "TimeStampEpoch": "1704447005550504860",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83102-95a6-11ed-9584-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.550523993",
+        "TimeStampEpoch": "1704447005550523993",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83104-95a6-11ed-bf74-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.74,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.601139667",
+        "TimeStampEpoch": "1704447005601139667",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83105-95a6-11ed-a7c0-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.77,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.601157962",
+        "TimeStampEpoch": "1704447005601157962",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83106-95a6-11ed-a962-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.6,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.601188170",
+        "TimeStampEpoch": "1704447005601188170",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83105-95a6-11ed-a7c0-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.77,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.601204723",
+        "TimeStampEpoch": "1704447005601204723",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83106-95a6-11ed-a962-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.6,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.619329986",
+        "TimeStampEpoch": "1704447005619329986",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83103-95a6-11ed-9e96-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.619376261",
+        "TimeStampEpoch": "1704447005619376261",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83103-95a6-11ed-9e96-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.619379458",
+        "TimeStampEpoch": "1704447005619379458",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83103-95a6-11ed-9e96-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.619415688",
+        "TimeStampEpoch": "1704447005619415688",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83104-95a6-11ed-bf74-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.619460264",
+        "TimeStampEpoch": "1704447005619460264",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83104-95a6-11ed-bf74-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.619464266",
+        "TimeStampEpoch": "1704447005619464266",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83104-95a6-11ed-bf74-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.619877161",
+        "TimeStampEpoch": "1704447005619877161",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83105-95a6-11ed-a7c0-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.619889372",
+        "TimeStampEpoch": "1704447005619889372",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83106-95a6-11ed-a962-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.619922446",
+        "TimeStampEpoch": "1704447005619922446",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83105-95a6-11ed-a7c0-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.619926886",
+        "TimeStampEpoch": "1704447005619926886",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83105-95a6-11ed-a7c0-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.619932946",
+        "TimeStampEpoch": "1704447005619932946",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83106-95a6-11ed-a962-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:05.619936725",
+        "TimeStampEpoch": "1704447005619936725",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83106-95a6-11ed-a962-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:06.626018937",
+        "TimeStampEpoch": "1704447006626018937",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83107-95a6-11ed-9fd9-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.77,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:06.626068038",
+        "TimeStampEpoch": "1704447006626068038",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83107-95a6-11ed-9fd9-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.77,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:06.626144352",
+        "TimeStampEpoch": "1704447006626144352",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83108-95a6-11ed-8eae-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.65,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:06.626190970",
+        "TimeStampEpoch": "1704447006626190970",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83108-95a6-11ed-8eae-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.65,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:06.690804581",
+        "TimeStampEpoch": "1704447006690804581",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83109-95a6-11ed-9e97-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.6,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:06.690851717",
+        "TimeStampEpoch": "1704447006690851717",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83109-95a6-11ed-9e97-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.6,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:06.691314511",
+        "TimeStampEpoch": "1704447006691314511",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83108-95a6-11ed-8eae-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:06.691360312",
+        "TimeStampEpoch": "1704447006691360312",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83108-95a6-11ed-8eae-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:06.691364102",
+        "TimeStampEpoch": "1704447006691364102",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83108-95a6-11ed-8eae-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:29.285207051",
+        "TimeStampEpoch": "1704447029285207051",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83109-95a6-11ed-9e97-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:29.285225754",
+        "TimeStampEpoch": "1704447029285225754",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef8310a-95a6-11ed-89f8-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.61,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:29.285257933",
+        "TimeStampEpoch": "1704447029285257933",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83109-95a6-11ed-9e97-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:29.285262641",
+        "TimeStampEpoch": "1704447029285262641",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83109-95a6-11ed-9e97-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:29.285270944",
+        "TimeStampEpoch": "1704447029285270944",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef8310a-95a6-11ed-89f8-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.61,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:55.184652102",
+        "TimeStampEpoch": "1704447055184652102",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef8310b-95a6-11ed-a6e1-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.78,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:55.184702454",
+        "TimeStampEpoch": "1704447055184702454",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef8310b-95a6-11ed-a6e1-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.78,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:55.184786616",
+        "TimeStampEpoch": "1704447055184786616",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83107-95a6-11ed-9fd9-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:55.184832279",
+        "TimeStampEpoch": "1704447055184832279",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83107-95a6-11ed-9fd9-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:30:55.184836177",
+        "TimeStampEpoch": "1704447055184836177",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83107-95a6-11ed-9fd9-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:01.750317392",
+        "TimeStampEpoch": "1704447061750317392",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef8310c-95a6-11ed-982f-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.79,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:01.750369747",
+        "TimeStampEpoch": "1704447061750369747",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef8310c-95a6-11ed-982f-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.79,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:01.750480491",
+        "TimeStampEpoch": "1704447061750480491",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef8310b-95a6-11ed-a6e1-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:01.750526780",
+        "TimeStampEpoch": "1704447061750526780",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef8310b-95a6-11ed-a6e1-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:01.750530500",
+        "TimeStampEpoch": "1704447061750530500",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef8310b-95a6-11ed-a6e1-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:15.141748726",
+        "TimeStampEpoch": "1704447075141748726",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef8310d-95a6-11ed-aaf8-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.6,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:15.141799402",
+        "TimeStampEpoch": "1704447075141799402",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef8310d-95a6-11ed-aaf8-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 20.6,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:15.141864805",
+        "TimeStampEpoch": "1704447075141864805",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef8310a-95a6-11ed-89f8-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:15.141911099",
+        "TimeStampEpoch": "1704447075141911099",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef8310a-95a6-11ed-89f8-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:15.141915150",
+        "TimeStampEpoch": "1704447075141915150",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef8310a-95a6-11ed-89f8-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:16.560475867",
+        "TimeStampEpoch": "1704447076560475867",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef8310e-95a6-11ed-81d4-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.8,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:16.560527566",
+        "TimeStampEpoch": "1704447076560527566",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef8310e-95a6-11ed-81d4-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.8,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:16.560639442",
+        "TimeStampEpoch": "1704447076560639442",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef8310c-95a6-11ed-982f-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:16.560688049",
+        "TimeStampEpoch": "1704447076560688049",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef8310c-95a6-11ed-982f-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:16.560693001",
+        "TimeStampEpoch": "1704447076560693001",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef8310c-95a6-11ed-982f-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:17.034872225",
+        "TimeStampEpoch": "1704447077034872225",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef8310e-95a6-11ed-81d4-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:17.034920496",
+        "TimeStampEpoch": "1704447077034920496",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef8310e-95a6-11ed-81d4-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:17.034924429",
+        "TimeStampEpoch": "1704447077034924429",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef8310e-95a6-11ed-81d4-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:17.034945721",
+        "TimeStampEpoch": "1704447077034945721",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef8310f-95a6-11ed-ad97-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.79,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:17.034992439",
+        "TimeStampEpoch": "1704447077034992439",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef8310f-95a6-11ed-ad97-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.79,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:17.259186881",
+        "TimeStampEpoch": "1704447077259186881",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83110-95a6-11ed-a72f-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.8,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:17.259234561",
+        "TimeStampEpoch": "1704447077259234561",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83110-95a6-11ed-a72f-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.8,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:17.259544766",
+        "TimeStampEpoch": "1704447077259544766",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef8310f-95a6-11ed-ad97-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:17.259590859",
+        "TimeStampEpoch": "1704447077259590859",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef8310f-95a6-11ed-ad97-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:17.259596165",
+        "TimeStampEpoch": "1704447077259596165",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef8310f-95a6-11ed-ad97-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:25.791041409",
+        "TimeStampEpoch": "1704447085791041409",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83111-95a6-11ed-a055-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.81,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:25.791092229",
+        "TimeStampEpoch": "1704447085791092229",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83111-95a6-11ed-a055-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.81,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:25.791180098",
+        "TimeStampEpoch": "1704447085791180098",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83110-95a6-11ed-a72f-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:25.791227736",
+        "TimeStampEpoch": "1704447085791227736",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83110-95a6-11ed-a72f-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:25.791231737",
+        "TimeStampEpoch": "1704447085791231737",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83110-95a6-11ed-a72f-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:31.303129716",
+        "TimeStampEpoch": "1704447091303129716",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83111-95a6-11ed-a055-047c16291a22",
+        "MessageType": "CancelRequest",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:31.303158762",
+        "TimeStampEpoch": "1704447091303158762",
+        "Direction": "NBFToExchange",
+        "OrderID": "fef83112-95a6-11ed-92a2-047c16291a22",
+        "MessageType": "NewOrderRequest",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.8,
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:31.303179722",
+        "TimeStampEpoch": "1704447091303179722",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83111-95a6-11ed-a055-047c16291a22",
+        "MessageType": "CancelAcknowledged",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:31.303184087",
+        "TimeStampEpoch": "1704447091303184087",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83111-95a6-11ed-a055-047c16291a22",
+        "MessageType": "Cancelled",
+        "Symbol": "5AV4I",
+        "Exchange": "Exchange_3"
+    },
+    {
+        "TimeStamp": "2024-01-05 09:31:31.303205760",
+        "TimeStampEpoch": "1704447091303205760",
+        "Direction": "ExchangeToNBF",
+        "OrderID": "fef83112-95a6-11ed-92a2-047c16291a22",
+        "MessageType": "NewOrderAcknowledged",
+        "Symbol": "5AV4I",
+        "OrderPrice": 19.8,
+        "Exchange": "Exchange_3"
+    }
+]
