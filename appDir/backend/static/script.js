@@ -3,16 +3,19 @@
 //import io from "../socket.io/socket.io.js"  
 
 /**
-add troublesome table for handling un initiated transactions
- */
+add counter for un-matched transactions
+*/
 
 $(document).ready(function() {
+    // Used in refreshPage() for re-running simulation
+    const refreshButton = document.querySelector('.refresh-button');
+
+    // Socket var, and tracker variables for datatables updates
     let socket;
     let counter = 0;
     let tableDict = {};
     //Try global access, and try to set ordering = false
     table = new DataTable("#activeTradesTable", {
-        //dom : 'Bfrtip',
         buttons: ['copyHtml5', 'csvHtml5', 'excelHtml5'],
         layout: {
             topStart: 'buttons'
@@ -28,12 +31,18 @@ $(document).ready(function() {
         socket = io();
         socket.connect("http://127.0.0.1:5000/");
         socket.on("connect", function() {
-            console.log("Client Connected")
+            console.log("Client Connected");
+            socket.emit("init_sim_seed");
             socket.emit("trans_processed");
     });
 
     socket.on("error_trans", function(){
         console.log("Triggered From Error");
+
+        // Used to update un-matched trades counter (troublesome dict in app.py)
+        var missed_counter = parseInt(document.getElementById("counter").innerText);
+        document.getElementById("counter").innerText = missed_counter + 1;
+
         socket.emit("trans_processed");
     });
 
@@ -65,7 +74,7 @@ $(document).ready(function() {
 
     socket.on("Server Terminated", function(){
         //can add the display summary table function here
-
+        /*------------------------------------------------------------------------------------------------------------------------------------------------*/
         console.log("Disconnecting Client")
         socket.disconnect();
     });
@@ -84,8 +93,7 @@ $(document).ready(function() {
     }
 
     function log_completed(data){
-        //add if data[0] == "Cancelled" handling
-        //row_index = tableDict[data[2]];//Is passing the enitre list!
+
         //console.log(tableDict[data[2]]);
         row_index = tableDict[data[2]][5];
 
@@ -116,11 +124,9 @@ $(document).ready(function() {
     function remove_from_tableDict(orderID){
         delete tableDict.orderID;
     }
-
     
     function add_table_row(data, row_number){
         // Append the received data as a new row to the DataTable
-        //table.order(false).draw(false); // disable annoying auto sorting, MAY need to add back
         table.row.add([
             data[0], // Ticker
             data[1], // Status
@@ -129,8 +135,7 @@ $(document).ready(function() {
             data[4]  // Request Time Epoch
         ]).draw(false); // false to prevent DataTable from redrawing the table
 
-        //table.draw();
-
+        // Update local dictionary for tracking changes within the datatable
         tableDict[data[5]] = [
             data[0], // Ticker
             data[1], // Status
@@ -144,6 +149,13 @@ $(document).ready(function() {
 
     }
 
+    // Refresh Simulaiton
+    const refreshPage = () => {
+        location.reload();
+    }
+    refreshButton.addEventListener("click", refreshPage);
+
+    // Init front end call
     initializeSocket();
 
 })

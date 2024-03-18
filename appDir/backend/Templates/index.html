@@ -21,7 +21,6 @@
     <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.html5.min.js"></script>
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
-
     
     <!--CSS-->
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.0.1/css/buttons.dataTables.css">
@@ -30,14 +29,24 @@
     <script src="./static/script.js"></script>
 </head>
 
-
 <body>
 
     <div class="tab-container">
-        <a href="results.html" class="tab">Results</a>
+        <!--<a href="results.html" class="tab"></a>-->
+        <button onclick="location.href='results.html'" type="button">
+            Simulation Summary</button>
     </div>
 
+    <div class="refresh-container">
+        <button class="refresh-button">Refresh Simulation!</button>
+    </div>
+    
     <h1>Active Trades</h1>
+
+    <div class="refresh-counter">
+        <h3>Mis-matched Trades Counter: <span id="counter">0</span></h3>
+    </div>
+
     <div id="activetradescontainer">
         <table id="activeTradesTable" class="display">
             <thead>
@@ -53,12 +62,7 @@
             <tbody>
                 <!--To be dynamically updated :: Test Data-->
             </tbody>
-
         </table>
     </div>
-    <!-- This Creates  io -->
-    <!-- 
-        <script src="http://127.0.0.1:5000/socket.io/socket.io.js"></script> 
-    -->
 </body>
 </html>

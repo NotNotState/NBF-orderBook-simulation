@@ -2,12 +2,15 @@ h1 {
     text-align: center;
 }
 
-/*
-#activetradescontainer {
-    width: 90%;
-    margin: 0 auto;
+.refresh-container {
+    display: flex;
+    justify-content: center;
 }
-*/
+
+.refresh-counter {
+    display: flex;
+    justify-content: center;
+}
 
 .tab-container {
     display: flex;
@@ -29,6 +32,11 @@ table {
     margin: auto;
 }
 
+/*
+.dt-button {
+    color: #f00 !important;
+}
+
 button {
     padding: 0.25rem 1rem !important;
     background-color: black !important;
@@ -36,6 +44,32 @@ button {
     border: none !important;
     border-radius: 0.5rem !important;
     font-weight: 700 !important;
+}
+
+button {
+    padding: 0.25rem 1rem !important;
+    background-color: black !important;
+    color: #f00 !important;
+    border: none !important;
+    border-radius: 0.5rem !important;
+    font-weight: 700 !important;
+}
+
+*/
+
+.dt-button {
+    padding: 0.25rem 1rem !important;
+    background-color: black !important;
+    color: #f00 !important;
+    border: none !important;
+    border-radius: 0.5rem !important;
+    font-weight: 700 !important;
+}
+
+button {
+    padding: 0.25rem 1rem !important;
+    background-color: grey !important;
+    color: white !important;
 }
 
 thead {

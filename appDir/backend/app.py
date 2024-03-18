@@ -29,14 +29,19 @@ def results():
 @socket.on('connect')
 def handle_connect():
     print("Client Connected")
+    print("Counter at: ", n)
 
-# ATTEMPTED REFRESH CALL
-"""
-@socket.on("refresh_call")
+# Simulation Refresh Call
+# Sets all global variables to init state, before process_transactions() is triggered
+@socket.on("init_sim_seed")
 def reset_n():
-    global n
+    global n, price_exposure, en_queue, completed, troublesome
+    en_queue = {}
+    completed = {}
+    troublesome = {} 
+    price_exposure = 0
     n = 0
-"""
+
 
 #Main processor function
 @socket.on("trans_processed")
@@ -45,12 +50,10 @@ def process_transactions() -> list:
     global n, price_exposure
     #time.sleep(0.08)#time works perfectly here
     formatted_transaction = []
-
     if n < 1000:
         tempTrans = dict(transactions[n])
         id = tempTrans.pop("OrderID")
         valueFormat = {"Ticker": None, "Status": None, "TargetPrice": None, "Exchange": None}
-
         if id in en_queue:
             if tempTrans["MessageType"] == "Cancelled" or tempTrans["MessageType"] == "Trade": # () and tempTrans["Exchange"] == en_queue["Ticker"]["Exchange"] can handle with out if
                 price_exposure -= en_queue[id]["TargetPrice"]
@@ -58,22 +61,25 @@ def process_transactions() -> list:
                 tranState["FilledPrice"] = tempTrans["OrderPrice"]
                 tranState["CompleteTimeEpoch"] = tempTrans["TimeStampEpoch"]
                 tranState["Status"] = tempTrans["MessageType"]
-                # Start Socket mod
+
+                # Start Socket message
+                # 3 param packet for front end: Status Update for ticker (cancelled, traded), final price (if trade), and Ticker id
                 completed[id] = tranState
                 state = tempTrans["MessageType"]
                 filled_price = tranState["FilledPrice"] if (tempTrans["OrderPrice"]) else "NA"
                 formatted_transaction = [state, filled_price, id]
                 socket.emit("log_complete_trans", formatted_transaction)
-                # End Socket Mod
+                # End Socket message
+
+                # Remove cancelled or traded tickers from active trades dictionary
                 en_queue.pop(id)
             else:
                 en_queue[id]["Status"] = tempTrans["MessageType"]
-                #adjust this
+                # Two param packet for front end: Status Update for ticker, and Ticker id
                 formatted_transaction = [en_queue[id]["Status"], id]
                 socket.emit("update_trans", formatted_transaction)
         
         elif tempTrans["MessageType"] != "NewOrderRequest":# Add some handling on Trade's for names not in the active book
-            #print(newTrans)
             troublesome[id] = tempTrans
             socket.emit("error_trans")
         else:
@@ -86,15 +92,15 @@ def process_transactions() -> list:
             price_exposure += tempTrans["OrderPrice"]
             
             formatted_transaction = [valueFormat["Ticker"], valueFormat["Status"], valueFormat["TargetPrice"], valueFormat["Exchange"], valueFormat["RequestTimeEpoch"], id]
-            #socket.emit("update_table", formatted_transaction)
             socket.emit("add_new_trans", formatted_transaction)
     else:
         socket.emit("Server Terminated")
+        print(len(troublesome))
         #call summary functions for final output
         return [pd.DataFrame.from_dict(completed, orient='index'), pd.DataFrame.from_dict(troublesome, orient='index'), pd.DataFrame.from_dict(en_queue, orient='index'), price_exposure]
-    
     #increment global counter
     n+=1
+
 
 if __name__ == "__main__":
     socket.run(app) 
