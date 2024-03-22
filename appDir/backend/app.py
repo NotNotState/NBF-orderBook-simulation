@@ -19,7 +19,7 @@ n = 0 # global processor counter
 sim_complete = False
 
 app = Flask(__name__)
-app.config["DEBUG"] = True
+#app.config["DEBUG"] = True
 app.config['SECRETY_KEY'] = 'KIRI'
 socket = SocketIO(app)
 
