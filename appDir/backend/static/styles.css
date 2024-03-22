@@ -28,34 +28,13 @@ table {
     width: 90%;
 }
 
+#activeTradesTable_wrapper{
+    padding: 15px;
+}
+
 .dataTables-wrapper{
     margin: auto;
 }
-
-/*
-.dt-button {
-    color: #f00 !important;
-}
-
-button {
-    padding: 0.25rem 1rem !important;
-    background-color: black !important;
-    color: white !important;
-    border: none !important;
-    border-radius: 0.5rem !important;
-    font-weight: 700 !important;
-}
-
-button {
-    padding: 0.25rem 1rem !important;
-    background-color: black !important;
-    color: #f00 !important;
-    border: none !important;
-    border-radius: 0.5rem !important;
-    font-weight: 700 !important;
-}
-
-*/
 
 .dt-button {
     padding: 0.25rem 1rem !important;

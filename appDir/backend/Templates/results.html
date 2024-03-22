@@ -4,6 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Results</title>
+    <!-- Include jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--Datatables CDN-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.2/css/dataTables.dataTables.css" />
+    <script src="https://cdn.datatables.net/2.0.2/js/dataTables.js"></script>
+
+    <!-- Include Websocket support -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.1/socket.io.js"></script>
+    
+    <!-- Excluding this styling makes the tale fill the entire screen which we may want-->
+    <!--Inlclude BUTTON CDN(s)-->
+    <!--JAVASCRIPT-->
+    <script src="https://cdn.datatables.net/buttons/3.0.1/js/dataTables.buttons.js"></script> <!--Necessary-->
+    <script src = "https://cdn.datatables.net/buttons/3.0.1/js/buttons.dataTables.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.html5.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.0.1/css/buttons.dataTables.css">
+    <!--CSS Custom-->
+    <link rel="stylesheet" href="./static/styles.css">
     <style>
         .tab-container {
             display: flex;
@@ -12,18 +35,420 @@
             padding: 10px;
         }
 
-        .tab {
-            margin: 0 10px;
+        .dt-button {
+            padding: 0.25rem 1rem !important;
+            background-color: black !important;
+            color: #f00 !important;
+            border: none !important;
+            border-radius: 0.5rem !important;
+            font-weight: 700 !important;
         }
+
+        th,td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center !important;
+        }
+
+        thead {
+            background-color: black;
+            color: white;
+        }
+
+        #tradesTable_wrapper{
+          padding: 40px;
+        }
+
+        canvas{
+          margin: 0 auto;
+          padding: 20px;
+        }
+
+        h1,h2 {
+          display: flex;
+          justify-content: center;
+        }
+
     </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 <body>
     <div class="tab-container">
-        <!--<a href="index.html" class="tab">Index</a>-->
-        <a href="http://127.0.0.1:5000/" class="tab">Index</a>
+        <!--<a href="http://127.0.0.1:5000/" class="tab">Back to Simulation</a>-->
+        <button onclick="location.href = '{{url_for('main')}}'">Back to Simulation</button>
     </div>
 
-    <h1>Results Page</h1>
-    <p>This is the content of the results page.</p>
+    <h1>Traded Tickers</h1>
+
+    <div id="trades-container">
+      <table id="tradesTable" class="display">
+          <thead>
+              <tr>
+                  <th>Ticker</th>
+                  <th>Status</th>
+                  <th>Exchange</th>
+                  <th>Request Time</th>
+                  <th>Fill Time</th>
+                  <th>Time Delta (Sec)</th>
+                  <th>Target Price</th>
+                  <th>Filled Price</th>
+              </tr>
+          </thead>
+          <tbody>
+              <!--To be dynamically updated :: Test Data-->
+          </tbody>
+      </table>
+    </div>
+
+    <h1>Summary Statistics</h1>
+    <div class="chart-container">
+      <canvas id="ending_exposure" width="800" height="350"></canvas>
+    </div>
+    <div class="chart-container">
+      <canvas id="summary" width="800" height="350"></canvas>
+    </div>
+
+    <h2>Time Breakdown</h2>
+
+    <div class="chart-container">
+      <canvas id="orders_by_minute" width="800" height="350"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="myChart" width="800" height="350"></canvas>
+    </div>
+    <div class="chart-container">
+      <canvas id="myChart2" width="800" height="350"></canvas>
+    </div>  
+    <div class="chart-container">
+      <canvas id="myChart3" width="800" height="350"></canvas>
+    </div>  
+    
+      <!--Chart.js Script-->
+      <script>
+        const ctxExposure = document.getElementById('ending_exposure');
+        const ctxSummary = document.getElementById('summary');
+        const ctxMinute = document.getElementById('orders_by_minute');
+        const ctx = document.getElementById('myChart');
+        const ctx2 = document.getElementById('myChart2');
+        const ctx3 = document.getElementById('myChart3');
+
+        new Chart(ctxExposure, {
+          type: 'bar',
+          data: {
+            labels: ['Exchange 1', 'Exchange 2', 'Exchange 3'],
+            datasets: [{
+              label: 'EOP Traded Tickers By Exchange',
+              data: [13, 7, 0],
+              backgroundColor: ['#FF999C', 'black', '#FF999C'],
+              borderColor: ['black', 'black', 'black'],
+              borderWidth: 2
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            },
+            responsive: false
+          }
+        });
+
+        new Chart(ctxSummary, {
+          type: 'bar',
+          data: {
+            labels: ['Completed', 'Updates', 'Un-matched (Errors)', 'Opens', 'Total'],
+            datasets: [{
+              label: 'Total Order Summary',
+              data: [45543, 133038, 981, 45900, 225462],
+              backgroundColor: ['#FF999C', 'black', '#FF999C', 'black', '#FF999C'],
+              borderColor: ['black', 'black', 'black', 'black'],
+              borderWidth: 2
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            },
+            responsive: false
+          }
+        });
+
+        new Chart(ctxMinute, {
+          type: 'bar',
+          data: {
+            labels: ['9:28', '9:29', '9:30', '9:31', '9:28 - 9:32'],
+            datasets: [{
+              label: '# Of Orders Per Minute',
+              data: [27385, 26544, 90380, 81153, 225462],
+              backgroundColor: ['#FF999C', 'black', '#FF999C', 'black', '#FF999C'],
+              borderColor: ['black', 'black', 'black', 'black'],
+              borderWidth: 2
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            },
+            responsive: false
+          }
+        });
+
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['Exchange 1', 'Exchange 2', 'Exchange 3', 'Total'],
+            datasets: [{
+              label: 'Average Order Fill Time (Seconds)',
+              data: [1.330195470, 1.745522590, 5.660391537, 1.368181206],
+              backgroundColor: ['#FF999C', 'black', '#FF999C', 'black'],
+              borderColor: ['black', 'black', 'black', 'black'],
+              borderWidth: 2
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            },
+            responsive: false
+          }
+        });
+
+        new Chart(ctx2, {
+          type: 'bar',
+          data: {
+            labels: ['Exchange 1', 'Exchange 2', 'Exchange 3', 'Total'],
+            datasets: [{
+              label: 'Median Order Fill Time (Seconds)',
+              data: [0.109122807, 0.251835050, 0.510167982, 0.119756752],
+              backgroundColor: ['#FF999C', 'black', '#FF999C', 'black'],
+              borderColor: ['black', 'black', 'black', 'black'],
+              borderWidth: 2
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            },
+            responsive: false
+          }
+        });
+
+        new Chart(ctx3, {
+          type: 'bar',
+          data: {
+            labels: ['9:28', '9:29', '9:30', '9:31'],
+            datasets: [{
+              label: 'Average Order Fill Time by Minute (Seconds)',
+              data: [3.439857, 1.901864, 1.116485, 7.693175],
+              backgroundColor: ['#FF999C', 'black', '#FF999C', 'black'],
+              borderColor: ['black', 'black', 'black', 'black'],
+              borderWidth: 2
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            },
+            responsive: false
+          }
+        });
+      </script>
+      
+      <!--Data Table Script-->
+      <script>
+        const table_data = [['XXRQC',
+            'Trade',
+            'Exchange_2',
+            '09:30:00.235902160',
+            '09:30:00.237001058',
+            '00.1098898',
+            31.74,
+            31.74],
+          ['U17PL',
+            'Trade',
+            'Exchange_1',
+            '09:30:00.386229053',
+            '09:30:00.386424431',
+            '00.195378',
+            0.79,
+            0.79],
+          ['07NHZ',
+            'Trade',
+            'Exchange_1',
+            '09:30:00.344553599',
+            '09:30:00.735761344',
+            '00.391207745',
+            100.15,
+            100.15],
+          ['GM73P',
+            'Trade',
+            'Exchange_1',
+            '09:30:00.709851633',
+            '09:30:00.735832506',
+            '00.25980873',
+            65.67,
+            65.67],
+          ['G6P60',
+            'Trade',
+            'Exchange_2',
+            '09:30:00.979186024',
+            '09:30:00.979712397',
+            '00.526373',
+            0.65,
+            0.65],
+          ['X63QB',
+            'Trade',
+            'Exchange_1',
+            '09:30:01.257001355',
+            '09:30:01.257092897',
+            '00.91542',
+            1.24,
+            1.24],
+          ['7XVEE',
+            'Trade',
+            'Exchange_1',
+            '09:30:01.124154640',
+            '09:30:01.707253118',
+            '00.583098478',
+            42.21,
+            42.21],
+          ['7XVEE',
+            'Trade',
+            'Exchange_1',
+            '09:30:03.178533582',
+            '09:30:03.691433372',
+            '00.512899790',
+            21.11,
+            21.11],
+          ['7SBWG',
+            'Trade',
+            'Exchange_1',
+            '09:30:04.249629470',
+            '09:30:04.256081542',
+            '00.6452072',
+            108.36,
+            108.36],
+          ['EOZAI',
+            'Trade',
+            'Exchange_2',
+            '09:30:05.041910211',
+            '09:30:05.042426870',
+            '00.516659',
+            21.14,
+            21.14],
+          ['EOZAI',
+            'Trade',
+            'Exchange_2',
+            '09:30:05.056966978',
+            '09:30:05.057509879',
+            '00.542901',
+            12.54,
+            12.54],
+          ['EOZAI',
+            'Trade',
+            'Exchange_2',
+            '09:30:05.068102356',
+            '09:30:05.068581505',
+            '00.479149',
+            1.05,
+            1.05],
+          ['WUC7J',
+            'Trade',
+            'Exchange_2',
+            '09:30:06.852807123',
+            '09:30:06.853295756',
+            '00.488633',
+            0.43,
+            0.43],
+          ['7SBWG',
+            'Trade',
+            'Exchange_1',
+            '09:30:13.320645580',
+            '09:30:13.779574704',
+            '00.458929124',
+            108.25,
+            108.25],
+          ['EOZAI',
+            'Trade',
+            'Exchange_2',
+            '09:30:12.654781744',
+            '09:30:14.487794225',
+            '01.833012481',
+            17.39,
+            17.39],
+          ['OUTD9',
+            'Trade',
+            'Exchange_1',
+            '09:30:13.237024925',
+            '09:30:14.492512270',
+            '01.255487345',
+            27.4,
+            27.4],
+          ['8TJ2B',
+            'Trade',
+            'Exchange_1',
+            '09:30:13.222644379',
+            '09:30:14.706381502',
+            '01.483737123',
+            61.45,
+            61.45],
+          ['OO2T3',
+            'Trade',
+            'Exchange_1',
+            '09:30:14.789338149',
+            '09:30:14.789425790',
+            '00.87641',
+            0.9,
+            0.9],
+          ['OO2T3',
+            'Trade',
+            'Exchange_1',
+            '09:30:14.789314414',
+            '09:30:14.789559958',
+            '00.245544',
+            43.82,
+            43.82],
+          ['07NHZ',
+            'Trade',
+            'Exchange_1',
+            '09:30:14.804577193',
+            '09:30:14.804842525',
+            '00.265332',
+            100.11,
+            100.11]]
+        table_data.forEach(r => {
+            var div1 = document.createElement('div');
+            div1.innerHTML = r[1];
+            r[1] = div1;
+        
+            var div3 = document.createElement('div');
+            div3.innerHTML = r[3];
+            r[3] = div3;
+        })
+
+        table = new DataTable("#tradesTable", {
+        data : table_data,
+        buttons: ['copyHtml5', 'csvHtml5', 'excelHtml5'],
+        layout: {
+            topStart: 'buttons'
+        },
+        deferRender : true,
+    });
+      </script>
+
 </body>
 </html>
