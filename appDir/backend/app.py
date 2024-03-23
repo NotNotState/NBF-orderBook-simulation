@@ -1,10 +1,10 @@
 from flask import Flask, render_template
 from flask_socketio import SocketIO
 from helperFile import DateTimeFromUTC, read_transactions
-
+from appDir.dataDir import *
 
 #Global Variable Declaration
-transactions = read_transactions("./appDir/dataDir/orderbook.json")
+transactions = read_transactions("orderbook.json")
 en_queue = {}
 completed = {}
 
@@ -18,18 +18,17 @@ n = 0 # global processor counter
 #testing conditional flask rendering of results page
 sim_complete = False
 
-app = Flask(__name__)
-#app.config["DEBUG"] = True
-app.config['SECRETY_KEY'] = 'KIRI'
-socket = SocketIO(app)
+flaskApp = Flask(__name__)
+flaskApp.config['SECRETY_KEY'] = 'KIRI'
+socket = SocketIO(flaskApp)
 
 #Flask Declarations
-@app.route("/")
+@flaskApp.route("/")
 def main():
     return render_template("index.html")
 
 
-@app.route('/results.html')
+@flaskApp.route('/results.html')
 def results():
     return render_template('results.html')
 
@@ -114,4 +113,4 @@ def process_transactions():
     n+=1
 
 if __name__ == "__main__":
-    socket.run(app, allow_unsafe_werkzeug=True) 
+    socket.run(flaskApp, allow_unsafe_werkzeug=True) 
