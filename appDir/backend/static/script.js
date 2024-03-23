@@ -22,49 +22,51 @@ $(document).ready(function() {
 
     function initializeSocket(){
         socket = io();
-        socket.connect("http://127.0.0.1:5000/");
+        //socket.connect("http://127.0.0.1:8000/");
+        socket.connect("http://127.0.0.1:8000/");
+
         socket.on("connect", function() {
             console.log("Client Connected");
             socket.emit("init_sim_seed");
             socket.emit("trans_processed");
-    });
+        });
 
-    socket.on("error_trans", function(){
-        //console.log("Triggered From Error");
-        // Used to update un-matched trades counter (troublesome dict in app.py)
-        var missed_counter = parseInt(document.getElementById("counter").innerText);
-        document.getElementById("counter").innerText = missed_counter + 1;
+        socket.on("error_trans", function(){
+            //console.log("Triggered From Error");
+            // Used to update un-matched trades counter (troublesome dict in app.py)
+            var missed_counter = parseInt(document.getElementById("counter").innerText);
+            document.getElementById("counter").innerText = missed_counter + 1;
 
-        socket.emit("trans_processed");
-    });
+            socket.emit("trans_processed");
+        });
 
-    socket.on("add_new_trans", function(data){
-        // Check if ID is already in our tableDict with either id in tableDict OR tableDict.hasOwnProperty(id)
-        //console.log("Triggered From Add New");
-        add_table_row(data, counter);
-        counter++;
-        socket.emit("trans_processed");
-    });
+        socket.on("add_new_trans", function(data){
+            // Check if ID is already in our tableDict with either id in tableDict OR tableDict.hasOwnProperty(id)
+            //console.log("Triggered From Add New");
+            add_table_row(data, counter);
+            counter++;
+            socket.emit("trans_processed");
+        });
 
-    socket.on("update_trans", function(data){
-        //console.log("Triggered From Update");
-        modify_row(data);
-        socket.emit("trans_processed");
-    });
+        socket.on("update_trans", function(data){
+            //console.log("Triggered From Update");
+            modify_row(data);
+            socket.emit("trans_processed");
+        });
 
-    socket.on("log_complete_trans", function(data){
-        //console.log("Triggered From Complete");
-        log_completed(data);
-        socket.emit("trans_processed");
-    });
-    //caller function for log_completed()
+        socket.on("log_complete_trans", function(data){
+            //console.log("Triggered From Complete");
+            log_completed(data);
+            socket.emit("trans_processed");
+        });
+        //caller function for log_completed()
 
-    socket.on("Server Terminated", function(){
-        //can add the display summary table function here
-        /*------------------------------------------------------------------------------------------------------------------------------------------------*/
-        console.log("Disconnecting Client")
-        socket.disconnect();
-    });
+        socket.on("Server Terminated", function(){
+            //can add the display summary table function here
+            /*------------------------------------------------------------------------------------------------------------------------------------------------*/
+            console.log("Disconnecting Client")
+            socket.disconnect();
+        });
 
     };
 

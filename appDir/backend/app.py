@@ -1,10 +1,10 @@
 from flask import Flask, render_template
 from flask_socketio import SocketIO
 from helperFile import DateTimeFromUTC, read_transactions
-from appDir.dataDir import *
+#from appDir.dataDir import *
 
 #Global Variable Declaration
-transactions = read_transactions("orderbook.json")
+transactions = read_transactions("../dataDir/orderbook.json")
 en_queue = {}
 completed = {}
 
@@ -113,4 +113,4 @@ def process_transactions():
     n+=1
 
 if __name__ == "__main__":
-    socket.run(flaskApp, allow_unsafe_werkzeug=True) 
+    socket.run(flaskApp) 
