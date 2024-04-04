@@ -1,6 +1,15 @@
 # NBF-orderBook-simulation
 Simulating the message passing between National Bank and 3 separate exchanges over 3 minutes
 
+### Packages and Use
+- Flask for running the server/api
+- Datatables.js for building the client facing simulation
+- Javascript/Ajax for any front end manipulation
+- SocketIO and socket.io for communicating and updating the front end tables
+- Chart.js for the summary statistic tables
+- Pandas for doing the initial analysis of the orders and creating an aggregate json file with all orders accross all 3 exchanges, sorted by Time-Stamp Epoch
+- Python datetime for getting the Time-stamp objects into a human readable format
+
 ### Methodology
 After playing with the data, ideas for visualization became clear under an approach which (1) showed the speed at which these order/transactions were occuring and (2) tracked the state of the orders throughout the time period would be the best bet. Given the data followed a "Request" -> "Confirm" two way handshake built on order IDs, using dictionaries for tracking active, closed, and mis-matched orders made the most sense. Then simply iterating through an aggregate list of orders (sorted by Timestamp Epoch) and updating a log on the client side via websockets is very straighforward. I chose to do this with Datatables.js which allowed me to customize the appearance of the active trades on the client side. The websocket implementation was done using Flask's Websocket.io packages. 
 
