@@ -13,8 +13,14 @@ app_old.py
 #ignore all node files except dependencies
 node_modules
 
-# Allow for dependencies
+# Allow for Build dependencies (PLEASE DON'T REMOVE DUMMY)
 !node_modules/.package-lock.json
 
 #Ignore unused directory
 National Bank Of Canada Data For ConUHacks VIII
+
+.DS_Store
+appDir/.DS_Store
+
+# appDir/__pycache__
+__pycache__
